@@ -9,6 +9,7 @@ const rootRouter = express.Router();
 app.set("view engine", "pug");
 app.set("views", process.cwd() + '/views');
 
+app.use("/dist", express.static("dist"));
 app.use("/", rootRouter);
 
 const home = (req, res) => {
