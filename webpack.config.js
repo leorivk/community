@@ -5,13 +5,13 @@ module.exports = {
         main: "./src/js/main.js",
     },
     output: {
-        filename: "[name].js",
-        path: path.resolve(__dirname, "dist", "js"),
+        filename: "js/[name].js",
+        path: path.resolve(__dirname, "dist"),
         clean: true
     },
+    mode: "development",
     watch: true,
     module: {
-        
         rules: [
             {
                 test: /\.js$/,
