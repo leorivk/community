@@ -1,6 +1,7 @@
 @import "reset.css";
+@import "components/header.css";
 
-body {
-    background-color: red;
-    color: white;
-  }
+body { 
+    background-color: #2B3A42;
+    height: 200vh;
+}

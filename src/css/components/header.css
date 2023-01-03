@@ -1,0 +1,30 @@
+nav {
+    position: fixed;
+    background-color: #2B3A42;
+    opacity: 0.7;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav__title h1 {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.nav__menu {
+    display: flex;
+    padding-right: 30px;
+}
+
+.nav__menu li {
+    margin-right: 10px;
+}
+
+.nav__menu li a {
+    text-decoration: none;
+    color: white;
+}
