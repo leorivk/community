@@ -1,7 +1,8 @@
 @import "reset.css";
 @import "components/header.css";
+@import "screens/login.css";
 
 body { 
-    background-color: #2B3A42;
-    height: 200vh;
+    background-color: #0E1117;
+    height: 100vh;
 }

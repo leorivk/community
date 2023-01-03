@@ -16,7 +16,12 @@ const home = (req, res) => {
     return res.render("home");
 }
 
+const login = (req, res) => {
+    return res.render("login");
+}
+
 rootRouter.get("/", home);
+rootRouter.get("/login", login);
 
 const handleListening = () => {
     console.log(`Listening from http://localhost:${PORT}/ ✅`);

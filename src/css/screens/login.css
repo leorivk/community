@@ -1,0 +1,55 @@
+.form__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: 30vh;
+}
+
+.form__title {
+    position: absolute;
+    bottom: 300px;
+    font-size: 30px;
+}
+
+.form__login {
+    position: relative;
+    background-color: #161B22;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form__login label {
+    margin-bottom: 10px;
+}
+
+.form__login input {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 30px;
+    background-color:  #0E1117;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.form__login #submit-input {
+    margin-bottom: 0px;
+    background-color: #238636;
+    cursor: pointer;
+}
+
+.form__sign-up {
+    color: white;
+}
+
+.form__sign-up a {
+    text-decoration: none;
+    color: #57A6FF;
+}
