@@ -1,0 +1,18 @@
+extends home.pug
+
+block content 
+    div.form__box.sign-up-form
+        h1.form__title Sign up
+        form.form__login(method=POST)
+            label(for="email-input") Email
+            input(type="email", id="email-input", name="email")
+            label(for="username-input") Username 
+            input(type="text", id="username-input", name="username")
+            label(for="password-input") Password
+            input(type="password", id="password-input", name="password")
+            label(for="password-input") Password again
+            input(type="password", id="password2-input", name="password2")
+            input(type="submit", value="Sign in", id="submit-input")
+        div.form__sign
+            span Already have an account?
+            a(href="/sign-in") Sign in &rarr;

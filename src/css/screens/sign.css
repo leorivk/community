@@ -5,12 +5,19 @@
     align-items: center;
     color: white;
     position: relative;
-    top: 30vh;
+}
+
+.sign-up-form {
+    top: 20vh;
+}
+
+.sign-in-form {
+    top: 25vh;
 }
 
 .form__title {
-    position: absolute;
-    bottom: 300px;
+    position: relative;
+    bottom: 20px;
     font-size: 30px;
 }
 
@@ -45,11 +52,12 @@
     cursor: pointer;
 }
 
-.form__sign-up {
+.form__sign {
     color: white;
 }
 
-.form__sign-up a {
+.form__sign a {
     text-decoration: none;
     color: #57A6FF;
+    margin-left: 5px;
 }

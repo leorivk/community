@@ -1,6 +1,6 @@
 @import "reset.css";
 @import "components/header.css";
-@import "screens/login.css";
+@import "screens/sign.css";
 
 body { 
     background-color: #0E1117;
