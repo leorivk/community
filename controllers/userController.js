@@ -45,3 +45,8 @@ export const signup = (req, res) => {
         return res.redirect("/sign-in");
     }
 }
+
+export const signout = (req, res) => {
+    req.session.destroy();
+    return res.redirect("/");
+}
