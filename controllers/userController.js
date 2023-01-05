@@ -10,7 +10,7 @@ export const signin = (req, res) => {
                 if(user.password === password) {
                     user.loggedIn = true;
                     req.session.user = user;
-                    return res.render("home", { user });
+                    return res.redirect("/");
                 } else {
                     return res.render("signin", { error_message: "Password doesn't match."});
                 }
