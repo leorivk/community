@@ -2,7 +2,13 @@ nav
     div.nav__title
         h1 Title
     ul.nav__menu
-        li 
-            a(href="/sign-in") Sign in
-        li 
-            a(href="/sign-up") Sign up
+        if user.loggedIn
+            li 
+                a(href="#") #{user.username}'s Profile
+            li
+                a(href="#") Logout
+        else
+            li 
+                a(href="/sign-in") Sign in
+            li 
+                a(href="/sign-up") Sign up

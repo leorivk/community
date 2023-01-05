@@ -1,7 +1,22 @@
 const userData = [];
 
 export const signin = (req, res) => {
+    if (req.method === "GET") {
         return res.render("signin");
+    } else if (req.method === "POST") {
+        const { email, password } = req.body;
+        for (const user of userData) {
+            if(user.email === email) {
+                if(user.password === password) {
+                    user.loggedIn = true;
+                    return res.render("home", { user });
+                } else {
+                    return res.render("signin", { error_message: "Password doesn't match."});
+                }
+            }
+        }
+        return res.render("signin", { error_message: "Email doesn't exists."});
+    }
 }
 
 export const signup = (req, res) => {
@@ -10,7 +25,7 @@ export const signup = (req, res) => {
     } else if (req.method === "POST") {
         const { email, username, password, password2 } = req.body;
         const user = {
-            email, username, password
+            email, username, password, loggedIn:false
         }
 
         if (password !== password2) {
