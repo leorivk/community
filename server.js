@@ -1,5 +1,6 @@
 import express from "express";
 import rootRouter from "./routers/rootRouter"
+import session from "express-session";
 
 const app = express();
 
@@ -11,6 +12,10 @@ app.set("views", process.cwd() + '/views');
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use("/dist", express.static("dist"));
+app.use(session({
+    secret: 'keyboard cat',
+    saveUninitialized: false,
+}))
 app.use("/", rootRouter);
 
 const handleListening = () => {
