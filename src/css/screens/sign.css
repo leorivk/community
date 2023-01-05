@@ -61,3 +61,8 @@
     color: #57A6FF;
     margin-left: 5px;
 }
+
+.error-message {
+    position: relative;
+    bottom: 30px;
+}

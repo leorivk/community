@@ -8,6 +8,8 @@ const PORT = 4000;
 app.set("view engine", "pug");
 app.set("views", process.cwd() + '/views');
 
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
 app.use("/dist", express.static("dist"));
 app.use("/", rootRouter);
 
